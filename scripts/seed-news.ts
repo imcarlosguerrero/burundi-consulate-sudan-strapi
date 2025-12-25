@@ -190,3 +190,5 @@ async function seed(): Promise<void> {
 }
 
 seed();
+
+export {};
