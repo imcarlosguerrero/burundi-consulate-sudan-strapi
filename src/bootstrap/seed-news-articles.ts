@@ -5,13 +5,15 @@
 
 import type { Core } from '@strapi/strapi';
 
+type NewsCategory = 'announcement' | 'consular-services' | 'event' | 'press-release' | 'general';
+
 interface ArticleSeedData {
   en: {
     title: string;
     slug: string;
     excerpt: string;
     content: string;
-    category: string;
+    category: NewsCategory;
     isFeatured: boolean;
     author: string;
   };
