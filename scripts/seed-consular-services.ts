@@ -76,6 +76,33 @@ const consularServicesData = [
       isActive: true,
       publishedAt: new Date().toISOString()
     },
+    fr: {
+      title: "Services de passeport",
+      description: "Nouvelles demandes de passeport, renouvellements et documents de voyage d'urgence pour les citoyens burundais.",
+      content: `<h2>Aperçu</h2>
+<p>Le Consulat offre des services complets de passeport aux citoyens burundais résidant au Soudan. Nos services comprennent les nouvelles demandes de passeport, les renouvellements et les documents de voyage d'urgence.</p>
+
+<h2>Services offerts</h2>
+<ul>
+<li><strong>Nouvelles demandes de passeport</strong> - Pour les demandeurs première fois ou ceux qui n'ont jamais détenu de passeport burundais</li>
+<li><strong>Renouvellement de passeport</strong> - Pour les passeports expirés ou bientôt expirés</li>
+<li><strong>Documents de voyage d'urgence</strong> - Pour les besoins de voyage urgents</li>
+<li><strong>Passeports pour enfants</strong> - Pour les mineurs nés de parents burundais</li>
+</ul>
+
+<h2>Documents requis</h2>
+<ul>
+<li>Formulaire de demande rempli</li>
+<li>Passeport actuel (pour les renouvellements)</li>
+<li>Acte de naissance ou preuve de citoyenneté</li>
+<li>Deux photos d'identité récentes</li>
+<li>Preuve de résidence au Soudan</li>
+<li>Paiement des frais applicables</li>
+</ul>
+
+<h2>Délai de traitement</h2>
+<p>Traitement standard : 4-6 semaines<br/>Traitement d'urgence : 1-2 semaines (frais supplémentaires)</p>`
+    },
     ar: {
       title: "خدمات جوازات السفر",
       description: "طلبات جوازات السفر الجديدة والتجديد ووثائق السفر الطارئة للمواطنين البورونديين.",
@@ -162,6 +189,35 @@ const consularServicesData = [
       order: 2,
       isActive: true,
       publishedAt: new Date().toISOString()
+    },
+    fr: {
+      title: "Demandes de visa",
+      description: "Visas d'entrée pour les ressortissants étrangers souhaitant se rendre au Burundi pour le tourisme, les affaires ou d'autres fins.",
+      content: `<h2>Aperçu</h2>
+<p>Le Consulat traite les demandes de visa pour les ressortissants étrangers souhaitant se rendre au Burundi. Nous proposons différents types de visas pour répondre aux différents objectifs de voyage.</p>
+
+<h2>Types de visas</h2>
+<ul>
+<li><strong>Visa touristique</strong> - Pour les voyages de loisirs et le tourisme</li>
+<li><strong>Visa d'affaires</strong> - Pour les réunions d'affaires, conférences et activités commerciales</li>
+<li><strong>Visa de transit</strong> - Pour les voyageurs en transit par le Burundi</li>
+<li><strong>Visa de travail</strong> - Pour l'emploi</li>
+<li><strong>Visa étudiant</strong> - Pour les études</li>
+</ul>
+
+<h2>Documents requis</h2>
+<ul>
+<li>Formulaire de demande de visa rempli</li>
+<li>Passeport valide d'au moins 6 mois</li>
+<li>Deux photos d'identité récentes</li>
+<li>Preuve d'hébergement au Burundi</li>
+<li>Billet de retour ou itinéraire de voyage</li>
+<li>Preuve de fonds suffisants</li>
+<li>Certificat de vaccination contre la fièvre jaune</li>
+</ul>
+
+<h2>Délai de traitement</h2>
+<p>Traitement standard : 5-7 jours ouvrables<br/>Traitement express : 2-3 jours ouvrables (frais supplémentaires)</p>`
     },
     ar: {
       title: "طلبات التأشيرة",
@@ -258,6 +314,34 @@ const consularServicesData = [
       order: 3,
       isActive: true,
       publishedAt: new Date().toISOString()
+    },
+    fr: {
+      title: "Actes de naissance",
+      description: "Enregistrement des naissances à l'étranger et délivrance d'actes de naissance pour les enfants nés de parents burundais.",
+      content: `<h2>Aperçu</h2>
+<p>Le Consulat fournit des services d'enregistrement des naissances pour les enfants nés de parents burundais au Soudan. Cela garantit que la citoyenneté burundaise de votre enfant est correctement documentée.</p>
+
+<h2>Services offerts</h2>
+<ul>
+<li><strong>Enregistrement des naissances</strong> - Enregistrement officiel des naissances à l'étranger</li>
+<li><strong>Délivrance d'actes de naissance</strong> - Obtention d'actes de naissance burundais officiels</li>
+<li><strong>Enregistrement tardif</strong> - Pour les naissances non enregistrées dans le délai standard</li>
+</ul>
+
+<h2>Éligibilité</h2>
+<p>Les enfants sont éligibles à l'enregistrement si au moins un parent est citoyen burundais au moment de la naissance.</p>
+
+<h2>Documents requis</h2>
+<ul>
+<li>Certificat de naissance de l'hôpital ou dossier de naissance</li>
+<li>Passeports ou cartes d'identité nationales des parents</li>
+<li>Certificat de mariage des parents (le cas échéant)</li>
+<li>Formulaire d'enregistrement rempli</li>
+<li>Deux photos de l'enfant</li>
+</ul>
+
+<h2>Délai de traitement</h2>
+<p>Traitement standard : 2-4 semaines</p>`
     },
     ar: {
       title: "شهادات الميلاد",
@@ -367,6 +451,40 @@ const consularServicesData = [
       order: 4,
       isActive: true,
       publishedAt: new Date().toISOString()
+    },
+    fr: {
+      title: "Légalisation de documents",
+      description: "Authentification et légalisation de documents pour utilisation au Burundi ou au Soudan.",
+      content: `<h2>Aperçu</h2>
+<p>Le Consulat fournit des services d'authentification et de légalisation pour les documents devant être utilisés officiellement au Burundi ou au Soudan.</p>
+
+<h2>Services offerts</h2>
+<ul>
+<li><strong>Authentification de documents</strong> - Vérification de l'authenticité des documents</li>
+<li><strong>Légalisation</strong> - Certification officielle pour usage international</li>
+<li><strong>Services d'apostille</strong> - Pour les pays parties à la Convention de La Haye</li>
+</ul>
+
+<h2>Types de documents</h2>
+<ul>
+<li>Certificats et diplômes d'études</li>
+<li>Certificats de mariage</li>
+<li>Documents commerciaux</li>
+<li>Documents juridiques</li>
+<li>Dossiers médicaux</li>
+<li>Procurations</li>
+</ul>
+
+<h2>Exigences</h2>
+<ul>
+<li>Document(s) original(aux) à légaliser</li>
+<li>Copie de la pièce d'identité ou du passeport du demandeur</li>
+<li>Formulaire de demande rempli</li>
+<li>Paiement des frais applicables</li>
+</ul>
+
+<h2>Délai de traitement</h2>
+<p>Traitement standard : 3-5 jours ouvrables</p>`
     },
     ar: {
       title: "توثيق المستندات",
@@ -483,6 +601,39 @@ const consularServicesData = [
       order: 5,
       isActive: true,
       publishedAt: new Date().toISOString()
+    },
+    fr: {
+      title: "Assistance aux citoyens",
+      description: "Soutien aux ressortissants burundais en situation d'urgence, y compris l'assistance médicale, juridique et le rapatriement.",
+      content: `<h2>Aperçu</h2>
+<p>Le Consulat fournit assistance et soutien aux citoyens burundais confrontés à des urgences ou des situations difficiles au Soudan.</p>
+
+<h2>Services offerts</h2>
+<ul>
+<li><strong>Assistance d'urgence</strong> - Soutien pendant les crises, catastrophes naturelles ou troubles civils</li>
+<li><strong>Assistance médicale</strong> - Aide en cas d'urgences médicales et visites à l'hôpital</li>
+<li><strong>Assistance juridique</strong> - Conseils sur les questions juridiques et orientation vers un conseiller juridique</li>
+<li><strong>Rapatriement</strong> - Assistance pour le retour au Burundi en situation d'urgence</li>
+<li><strong>Visites de bien-être</strong> - Visites aux citoyens détenus ou hospitalisés</li>
+</ul>
+
+<h2>Ce que nous pouvons aider</h2>
+<ul>
+<li>Documents perdus ou volés</li>
+<li>Victimes de crimes</li>
+<li>Urgences médicales</li>
+<li>Décès d'un membre de la famille à l'étranger</li>
+<li>Arrestation ou détention</li>
+<li>Catastrophes naturelles ou urgences civiles</li>
+</ul>
+
+<h2>Ce que nous ne pouvons pas faire</h2>
+<ul>
+<li>Fournir une assistance financière ou des prêts</li>
+<li>Intervenir dans les procédures judiciaires</li>
+<li>Vous faire sortir de prison</li>
+<li>Fournir des conseils juridiques</li>
+</ul>`
     },
     ar: {
       title: "مساعدة المواطنين",
@@ -606,6 +757,47 @@ const consularServicesData = [
       order: 6,
       isActive: true,
       publishedAt: new Date().toISOString()
+    },
+    fr: {
+      title: "Procuration",
+      description: "Notarisation et certification des procurations et autres actes juridiques.",
+      content: `<h2>Aperçu</h2>
+<p>Le Consulat fournit des services de notarisation et de certification pour les procurations et autres actes juridiques pour les citoyens burundais.</p>
+
+<h2>Services offerts</h2>
+<ul>
+<li><strong>Procuration générale</strong> - Autorisation large pour qu'un mandataire agisse en votre nom</li>
+<li><strong>Procuration spéciale</strong> - Autorisation limitée pour des transactions spécifiques</li>
+<li><strong>Notarisation</strong> - Certification officielle des signatures et documents</li>
+<li><strong>Déclarations sous serment</strong> - Déclarations assermentées à des fins juridiques</li>
+</ul>
+
+<h2>Utilisations courantes</h2>
+<ul>
+<li>Transactions immobilières au Burundi</li>
+<li>Affaires bancaires et financières</li>
+<li>Représentation juridique</li>
+<li>Transactions commerciales</li>
+<li>Affaires familiales</li>
+</ul>
+
+<h2>Documents requis</h2>
+<ul>
+<li>Passeport valide ou carte d'identité nationale</li>
+<li>Projet de procuration</li>
+<li>Coordonnées du mandataire désigné</li>
+<li>Détails spécifiques des actions autorisées</li>
+</ul>
+
+<h2>Notes importantes</h2>
+<ul>
+<li>Toutes les parties doivent se présenter en personne au Consulat</li>
+<li>Les documents doivent être en français ou accompagnés d'une traduction certifiée</li>
+<li>Des témoins peuvent être requis pour certains documents</li>
+</ul>
+
+<h2>Délai de traitement</h2>
+<p>Service le jour même disponible pour la plupart des documents</p>`
     },
     ar: {
       title: "التوكيل الرسمي",
@@ -749,6 +941,31 @@ async function createArabicVersion(documentId: string, arData: ServiceData, slug
   }
 }
 
+async function createFrenchVersion(documentId: string, frData: ServiceData, slug: string, icon: string, order: number, isActive: boolean): Promise<void> {
+  const res = await fetch(`${STRAPI_URL}/api/consular-services/${documentId}?locale=fr`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${API_TOKEN}`
+    },
+    body: JSON.stringify({ 
+      data: {
+        ...frData,
+        slug,
+        icon,
+        order,
+        isActive,
+        locale: 'fr'
+      }
+    })
+  });
+  
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`French creation failed: ${text}`);
+  }
+}
+
 async function seed(): Promise<void> {
   console.log('🌱 Seeding consular services...\n');
   
@@ -761,6 +978,16 @@ async function seed(): Promise<void> {
       const documentId = await createService(service.en);
       console.log(`   ✓ English created`);
       
+      await createFrenchVersion(
+        documentId, 
+        service.fr, 
+        service.en.slug, 
+        service.en.icon!, 
+        service.en.order!, 
+        service.en.isActive!
+      );
+      console.log(`   ✓ French created`);
+      
       await createArabicVersion(
         documentId, 
         service.ar, 
@@ -772,7 +999,7 @@ async function seed(): Promise<void> {
       console.log(`   ✓ Arabic created`);
     }
     
-    console.log('\n✅ Done! Created 6 consular services with English and Arabic versions.');
+    console.log('\n✅ Done! Created 6 consular services with English, French, and Arabic versions.');
   } catch (error) {
     console.error('\n❌ Error:', error);
     process.exit(1);

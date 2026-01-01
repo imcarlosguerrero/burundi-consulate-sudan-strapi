@@ -17,6 +17,12 @@ interface ArticleSeedData {
     isFeatured: boolean;
     author: string;
   };
+  fr: {
+    title: string;
+    excerpt: string;
+    content: string;
+    author: string;
+  };
   ar: {
     title: string;
     excerpt: string;
@@ -36,6 +42,12 @@ const newsData: ArticleSeedData[] = [
       isFeatured: true,
       author: "Consulate Administration"
     },
+    fr: {
+      title: "Calendrier des jours fériés du Consulat 2026",
+      excerpt: "Le Consulat sera fermé aux dates suivantes pour les jours fériés nationaux en 2026.",
+      content: "<p>Le Consulat du Burundi annonce son calendrier des jours fériés pour 2026. Nous serons fermés le 1er janvier (Nouvel An), le 1er juillet (Fête de l'Indépendance) et le 25 décembre (Noël).</p>",
+      author: "Administration du Consulat"
+    },
     ar: {
       title: "جدول العطلات الرسمية للقنصلية 2026",
       excerpt: "ستكون القنصلية مغلقة في التواريخ التالية للعطلات الوطنية في عام 2026.",
@@ -53,6 +65,12 @@ const newsData: ArticleSeedData[] = [
       isFeatured: false,
       author: "Consular Services"
     },
+    fr: {
+      title: "Nouvelles procédures de demande de passeport",
+      excerpt: "Les nouvelles directives pour les demandes de passeport sont maintenant en vigueur.",
+      content: "<p>Le Consulat a mis à jour les procédures de demande de passeport. Veuillez apporter votre carte d'identité nationale, votre acte de naissance et 4 photos d'identité. Le traitement prend 4 à 6 semaines.</p>",
+      author: "Services consulaires"
+    },
     ar: {
       title: "إجراءات جديدة لطلبات جوازات السفر",
       excerpt: "الإرشادات المحدثة لطلبات جوازات السفر سارية المفعول الآن.",
@@ -69,6 +87,12 @@ const newsData: ArticleSeedData[] = [
       category: "event",
       isFeatured: true,
       author: "Events Team"
+    },
+    fr: {
+      title: "Célébration de la Fête de l'Indépendance du Burundi",
+      excerpt: "Rejoignez-nous pour célébrer la Fête de l'Indépendance du Burundi le 1er juillet 2026.",
+      content: "<p>Le Consulat invite tous les ressortissants burundais à célébrer la Fête de l'Indépendance. L'événement comprendra des tambours traditionnels, des danses culturelles et une cuisine burundaise.</p>",
+      author: "Équipe des événements"
     },
     ar: {
       title: "احتفال عيد استقلال بوروندي",
@@ -110,6 +134,24 @@ export async function seedNewsArticles(strapi: Core.Strapi): Promise<void> {
       });
 
       strapi.log.info(`   ✓ Created (EN): ${article.en.title}`);
+
+      // Create French version
+      await strapi.documents('api::news-article.news-article').update({
+        documentId: created.documentId,
+        locale: 'fr',
+        data: {
+          title: article.fr.title,
+          slug: article.en.slug,
+          excerpt: article.fr.excerpt,
+          content: article.fr.content,
+          author: article.fr.author,
+          category: article.en.category,
+          isFeatured: article.en.isFeatured
+        },
+        status: 'published'
+      });
+
+      strapi.log.info(`   ✓ Created (FR): ${article.fr.title}`);
 
       // Create Arabic version
       await strapi.documents('api::news-article.news-article').update({

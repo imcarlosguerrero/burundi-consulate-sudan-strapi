@@ -23,6 +23,12 @@ const newsData = [
       author: "Consulate Administration",
       publishedAt: "2025-12-15T10:00:00.000Z"
     },
+    fr: {
+      title: "Calendrier des jours fériés du Consulat 2026",
+      excerpt: "Le Consulat sera fermé aux dates suivantes pour les jours fériés nationaux en 2026.",
+      content: "<p>Le Consulat du Burundi annonce son calendrier des jours fériés pour 2026. Nous serons fermés le 1er janvier (Nouvel An), le 1er juillet (Fête de l'Indépendance) et le 25 décembre (Noël).</p>",
+      author: "Administration du Consulat"
+    },
     ar: {
       title: "جدول العطلات الرسمية للقنصلية 2026",
       excerpt: "ستكون القنصلية مغلقة في التواريخ التالية للعطلات الوطنية في عام 2026.",
@@ -41,6 +47,12 @@ const newsData = [
       author: "Consular Services",
       publishedAt: "2025-12-01T09:00:00.000Z"
     },
+    fr: {
+      title: "Nouvelles procédures de demande de passeport",
+      excerpt: "Les nouvelles directives pour les demandes de passeport sont maintenant en vigueur.",
+      content: "<p>Le Consulat a mis à jour les procédures de demande de passeport. Veuillez apporter votre carte d'identité nationale, votre acte de naissance et 4 photos d'identité. Le traitement prend 4 à 6 semaines.</p>",
+      author: "Services consulaires"
+    },
     ar: {
       title: "إجراءات جديدة لطلبات جوازات السفر",
       excerpt: "الإرشادات المحدثة لطلبات جوازات السفر سارية المفعول الآن.",
@@ -58,6 +70,12 @@ const newsData = [
       isFeatured: true,
       author: "Events Team",
       publishedAt: "2025-11-20T08:00:00.000Z"
+    },
+    fr: {
+      title: "Célébration de la Fête de l'Indépendance du Burundi",
+      excerpt: "Rejoignez-nous pour célébrer la Fête de l'Indépendance du Burundi le 1er juillet 2026.",
+      content: "<p>Le Consulat invite tous les ressortissants burundais à célébrer la Fête de l'Indépendance. L'événement comprendra des tambours traditionnels, des danses culturelles et une cuisine burundaise.</p>",
+      author: "Équipe des événements"
     },
     ar: {
       title: "احتفال عيد استقلال بوروندي",
@@ -166,6 +184,28 @@ async function createArabicVersion(documentId: string, arData: ArticleData, slug
   }
 }
 
+async function createFrenchVersion(documentId: string, frData: ArticleData, slug: string): Promise<void> {
+  const res = await fetch(`${STRAPI_URL}/api/news-articles/${documentId}?locale=fr`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${API_TOKEN}`
+    },
+    body: JSON.stringify({ 
+      data: {
+        ...frData,
+        slug,
+        locale: 'fr'
+      }
+    })
+  });
+  
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`French creation failed: ${text}`);
+  }
+}
+
 async function seed(): Promise<void> {
   console.log('🌱 Seeding news articles...\n');
   
@@ -178,11 +218,14 @@ async function seed(): Promise<void> {
       const documentId = await createArticle(news.en);
       console.log(`   ✓ English created`);
       
+      await createFrenchVersion(documentId, news.fr, news.en.slug);
+      console.log(`   ✓ French created`);
+      
       await createArabicVersion(documentId, news.ar, news.en.slug);
       console.log(`   ✓ Arabic created`);
     }
     
-    console.log('\n✅ Done! Created 3 articles with English and Arabic versions.');
+    console.log('\n✅ Done! Created 3 articles with English, French, and Arabic versions.');
   } catch (error) {
     console.error('\n❌ Error:', error);
     process.exit(1);
