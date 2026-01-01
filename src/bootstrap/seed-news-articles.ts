@@ -106,11 +106,49 @@ const newsData: ArticleSeedData[] = [
 export async function seedNewsArticles(strapi: Core.Strapi): Promise<void> {
   const existingArticles = await strapi.documents('api::news-article.news-article').findMany({
     locale: 'en',
-    limit: 1
+    limit: 100
   });
 
   if (existingArticles.length > 0) {
-    strapi.log.info('🌱 News articles already seeded, skipping...');
+    // Content exists - check if French translations are missing
+    strapi.log.info('🌱 News articles exist, checking for missing French translations...');
+    
+    for (const existing of existingArticles) {
+      // Find matching seed data by slug
+      const seedData = newsData.find(a => a.en.slug === existing.slug);
+      if (!seedData) continue;
+      
+      // Check if French version exists
+      const frenchVersion = await strapi.documents('api::news-article.news-article').findMany({
+        locale: 'fr',
+        filters: { documentId: existing.documentId },
+        limit: 1
+      });
+      
+      if (frenchVersion.length === 0) {
+        try {
+          await strapi.documents('api::news-article.news-article').update({
+            documentId: existing.documentId,
+            locale: 'fr',
+            data: {
+              title: seedData.fr.title,
+              slug: seedData.en.slug,
+              excerpt: seedData.fr.excerpt,
+              content: seedData.fr.content,
+              author: seedData.fr.author,
+              category: seedData.en.category,
+              isFeatured: seedData.en.isFeatured
+            },
+            status: 'published'
+          });
+          strapi.log.info(`   ✓ Added French: ${seedData.fr.title}`);
+        } catch (error) {
+          strapi.log.error(`   ✗ Failed to add French for: ${existing.title}`, error);
+        }
+      }
+    }
+    
+    strapi.log.info('✅ French translations check complete!');
     return;
   }
 

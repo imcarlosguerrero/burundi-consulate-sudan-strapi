@@ -857,11 +857,49 @@ const consularServicesData: ServiceSeedData[] = [
 export async function seedConsularServices(strapi: Core.Strapi): Promise<void> {
   const existingServices = await strapi.documents('api::consular-service.consular-service').findMany({
     locale: 'en',
-    limit: 1
+    limit: 100
   });
 
   if (existingServices.length > 0) {
-    strapi.log.info('🌱 Consular services already seeded, skipping...');
+    // Content exists - check if French translations are missing
+    strapi.log.info('🌱 Consular services exist, checking for missing French translations...');
+    
+    for (const existing of existingServices) {
+      // Find matching seed data by slug
+      const seedData = consularServicesData.find(s => s.en.slug === existing.slug);
+      if (!seedData) continue;
+      
+      // Check if French version exists
+      const frenchVersion = await strapi.documents('api::consular-service.consular-service').findMany({
+        locale: 'fr',
+        filters: { documentId: existing.documentId },
+        limit: 1
+      });
+      
+      if (frenchVersion.length === 0) {
+        try {
+          await strapi.documents('api::consular-service.consular-service').update({
+            documentId: existing.documentId,
+            locale: 'fr',
+            data: {
+              title: seedData.fr.title,
+              slug: seedData.en.slug,
+              description: seedData.fr.description,
+              content: seedData.fr.content,
+              icon: seedData.en.icon,
+              order: seedData.en.order,
+              isActive: seedData.en.isActive
+            },
+            status: 'published'
+          });
+          strapi.log.info(`   ✓ Added French: ${seedData.fr.title}`);
+        } catch (error) {
+          strapi.log.error(`   ✗ Failed to add French for: ${existing.title}`, error);
+        }
+      }
+    }
+    
+    strapi.log.info('✅ French translations check complete!');
     return;
   }
 
