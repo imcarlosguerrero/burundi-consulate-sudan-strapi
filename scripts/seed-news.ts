@@ -14,26 +14,26 @@ if (!API_TOKEN) {
 const newsData = [
   {
     en: {
-      title: "Consulate Holiday Schedule 2026",
-      slug: "consulate-holiday-schedule-2026",
-      excerpt: "The Consulate will be closed on the following dates for national holidays in 2026.",
-      content: "<p>The Consulate of Burundi announces its holiday schedule for 2026. We will be closed on January 1 (New Year), July 1 (Independence Day), and December 25 (Christmas).</p>",
+      title: "Honorary Consulate Holiday Schedule 2026",
+      slug: "honorary-consulate-holiday-schedule-2026",
+      excerpt: "The Honorary Consulate will be closed on the following dates for national holidays in 2026.",
+      content: "<p>The Honorary Consulate of Burundi announces its holiday schedule for 2026. We will be closed on January 1 (New Year), July 1 (Independence Day), and December 25 (Christmas).</p>",
       category: "announcement",
       isFeatured: true,
-      author: "Consulate Administration",
+      author: "Honorary Consulate Administration",
       publishedAt: "2025-12-15T10:00:00.000Z"
     },
     fr: {
-      title: "Calendrier des jours fériés du Consulat 2026",
-      excerpt: "Le Consulat sera fermé aux dates suivantes pour les jours fériés nationaux en 2026.",
-      content: "<p>Le Consulat du Burundi annonce son calendrier des jours fériés pour 2026. Nous serons fermés le 1er janvier (Nouvel An), le 1er juillet (Fête de l'Indépendance) et le 25 décembre (Noël).</p>",
-      author: "Administration du Consulat"
+      title: "Calendrier des jours fériés du Consulat Honoraire 2026",
+      excerpt: "Le Consulat Honoraire sera fermé aux dates suivantes pour les jours fériés nationaux en 2026.",
+      content: "<p>Le Consulat Honoraire du Burundi annonce son calendrier des jours fériés pour 2026. Nous serons fermés le 1er janvier (Nouvel An), le 1er juillet (Fête de l'Indépendance) et le 25 décembre (Noël).</p>",
+      author: "Administration du Consulat Honoraire"
     },
     ar: {
-      title: "جدول العطلات الرسمية للقنصلية 2026",
-      excerpt: "ستكون القنصلية مغلقة في التواريخ التالية للعطلات الوطنية في عام 2026.",
-      content: "<p>تعلن قنصلية بوروندي عن جدول العطلات الرسمية لعام 2026. سنكون مغلقين في 1 يناير (رأس السنة)، 1 يوليو (عيد الاستقلال)، و25 ديسمبر (عيد الميلاد).</p>",
-      author: "إدارة القنصلية"
+      title: "جدول العطلات الرسمية للقنصلية الفخرية 2026",
+      excerpt: "ستكون القنصلية الفخرية مغلقة في التواريخ التالية للعطلات الوطنية في عام 2026.",
+      content: "<p>تعلن القنصلية الفخرية لبوروندي عن جدول العطلات الرسمية لعام 2026. سنكون مغلقين في 1 يناير (رأس السنة)، 1 يوليو (عيد الاستقلال)، إ25 ديسمبر (عيد الميلاد).</p>",
+      author: "إدارة القنصلية الفخرية"
     }
   },
   {
@@ -41,23 +41,23 @@ const newsData = [
       title: "New Passport Application Procedures",
       slug: "new-passport-application-procedures",
       excerpt: "Updated guidelines for passport applications are now in effect.",
-      content: "<p>The Consulate has updated passport application procedures. Please bring your national ID, birth certificate, and 4 passport photos. Processing takes 4-6 weeks.</p>",
+      content: "<p>The Honorary Consulate has updated passport application procedures. Please bring your national ID, birth certificate, and 4 passport photos. Processing takes 4-6 weeks.</p>",
       category: "consular-services",
       isFeatured: false,
-      author: "Consular Services",
+      author: "Honorary Consular Services",
       publishedAt: "2025-12-01T09:00:00.000Z"
     },
     fr: {
       title: "Nouvelles procédures de demande de passeport",
       excerpt: "Les nouvelles directives pour les demandes de passeport sont maintenant en vigueur.",
-      content: "<p>Le Consulat a mis à jour les procédures de demande de passeport. Veuillez apporter votre carte d'identité nationale, votre acte de naissance et 4 photos d'identité. Le traitement prend 4 à 6 semaines.</p>",
-      author: "Services consulaires"
+      content: "<p>Le Consulat Honoraire a mis à jour les procédures de demande de passeport. Veuillez apporter votre carte d'identité nationale, votre acte de naissance et 4 photos d'identité. Le traitement prend 4 à 6 semaines.</p>",
+      author: "Services consulaires honoraires"
     },
     ar: {
       title: "إجراءات جديدة لطلبات جوازات السفر",
       excerpt: "الإرشادات المحدثة لطلبات جوازات السفر سارية المفعول الآن.",
-      content: "<p>قامت القنصلية بتحديث إجراءات طلب جواز السفر. يرجى إحضار بطاقة الهوية الوطنية وشهادة الميلاد و4 صور. تستغرق المعالجة 4-6 أسابيع.</p>",
-      author: "الخدمات القنصلية"
+      content: "<p>قامت القنصلية الفخرية بتحديث إجراءات طلب جواز السفر. يرجى إحضار بطاقة الهوية الوطنية وشهادة الميلاد و4 صور. تستغرق المعالجة 4-6 أسابيع.</p>",
+      author: "الخدمات القنصلية الفخرية"
     }
   },
   {
@@ -65,7 +65,7 @@ const newsData = [
       title: "Burundi Independence Day Celebration",
       slug: "burundi-independence-day-celebration",
       excerpt: "Join us in celebrating Burundi's Independence Day on July 1, 2026.",
-      content: "<p>The Consulate invites all Burundian nationals to celebrate Independence Day. The event will feature traditional drums, cultural dances, and Burundian cuisine.</p>",
+      content: "<p>The Honorary Consulate invites all Burundian nationals to celebrate Independence Day. The event will feature traditional drums, cultural dances, and Burundian cuisine.</p>",
       category: "event",
       isFeatured: true,
       author: "Events Team",
@@ -74,13 +74,13 @@ const newsData = [
     fr: {
       title: "Célébration de la Fête de l'Indépendance du Burundi",
       excerpt: "Rejoignez-nous pour célébrer la Fête de l'Indépendance du Burundi le 1er juillet 2026.",
-      content: "<p>Le Consulat invite tous les ressortissants burundais à célébrer la Fête de l'Indépendance. L'événement comprendra des tambours traditionnels, des danses culturelles et une cuisine burundaise.</p>",
+      content: "<p>Le Consulat Honoraire invite tous les ressortissants burundais à célébrer la Fête de l'Indépendance. L'événement comprendra des tambours traditionnels, des danses culturelles et une cuisine burundaise.</p>",
       author: "Équipe des événements"
     },
     ar: {
       title: "احتفال عيد استقلال بوروندي",
       excerpt: "انضموا إلينا للاحتفال بعيد استقلال بوروندي في 1 يوليو 2026.",
-      content: "<p>تدعو القنصلية جميع الرعايا البورونديين للاحتفال بعيد الاستقلال. سيتضمن الحدث الطبول التقليدية والرقصات الثقافية والمأكولات البوروندية.</p>",
+      content: "<p>تدعو القنصلية الفخرية جميع الرعايا البورونديين للاحتفال بعيد الاستقلال. سيتضمن الحدث الطبول التقليدية والرقصات الثقافية والمأكولات البوروندية.</p>",
       author: "فريق الفعاليات"
     }
   }

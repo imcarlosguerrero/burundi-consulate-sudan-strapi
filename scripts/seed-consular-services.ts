@@ -37,7 +37,7 @@ const consularServicesData = [
       slug: "passport-services",
       description: "New passport applications, renewals, and emergency travel documents for Burundian citizens.",
       content: `<h2>Passport Services</h2>
-<p>The Consulate of Burundi in Sudan provides comprehensive passport services for Burundian citizens residing in Sudan.</p>
+<p>The Honorary Consulate of Burundi in Sudan provides comprehensive passport services for Burundian citizens residing in Sudan.</p>
 
 <h3>Services Offered</h3>
 <ul>
@@ -70,7 +70,7 @@ const consularServicesData = [
   <li>Replacement (lost/stolen): $120 USD</li>
 </ul>
 
-<p>Please schedule an appointment before visiting the consulate.</p>`,
+<p>Please schedule an appointment before visiting the honorary consulate.</p>`,
       icon: "passport",
       order: 1,
       isActive: true,
@@ -80,7 +80,7 @@ const consularServicesData = [
       title: "Services de passeport",
       description: "Nouvelles demandes de passeport, renouvellements et documents de voyage d'urgence pour les citoyens burundais.",
       content: `<h2>Aperçu</h2>
-<p>Le Consulat offre des services complets de passeport aux citoyens burundais résidant au Soudan. Nos services comprennent les nouvelles demandes de passeport, les renouvellements et les documents de voyage d'urgence.</p>
+<p>Le Consulat Honoraire offre des services complets de passeport aux citoyens burundais résidant au Soudan. Nos services comprennent les nouvelles demandes de passeport, les renouvellements et les documents de voyage d'urgence.</p>
 
 <h2>Services offerts</h2>
 <ul>
@@ -107,7 +107,7 @@ const consularServicesData = [
       title: "خدمات جوازات السفر",
       description: "طلبات جوازات السفر الجديدة والتجديد ووثائق السفر الطارئة للمواطنين البورونديين.",
       content: `<h2>خدمات جوازات السفر</h2>
-<p>تقدم قنصلية بوروندي في السودان خدمات شاملة لجوازات السفر للمواطنين البورونديين المقيمين في السودان.</p>
+<p>تقدم القنصلية الفخرية لبوروندي في السودان خدمات شاملة لجوازات السفر للمواطنين البورونديين المقيمين في السودان.</p>
 
 <h3>الخدمات المقدمة</h3>
 <ul>
@@ -140,7 +140,7 @@ const consularServicesData = [
   <li>الاستبدال (مفقود/مسروق): 120 دولار أمريكي</li>
 </ul>
 
-<p>يرجى تحديد موعد قبل زيارة القنصلية.</p>`
+<p>يرجى تحديد موعد قبل زيارة القنصلية الفخرية.</p>`
     }
   },
   {
@@ -149,7 +149,7 @@ const consularServicesData = [
       slug: "visa-applications",
       description: "Entry visas for foreign nationals wishing to travel to Burundi for tourism, business, or other purposes.",
       content: `<h2>Visa Applications</h2>
-<p>The Consulate processes visa applications for foreign nationals wishing to travel to Burundi.</p>
+<p>The Honorary Consulate processes visa applications for foreign nationals wishing to travel to Burundi.</p>
 
 <h3>Visa Types</h3>
 <ul>
@@ -194,7 +194,7 @@ const consularServicesData = [
       title: "Demandes de visa",
       description: "Visas d'entrée pour les ressortissants étrangers souhaitant se rendre au Burundi pour le tourisme, les affaires ou d'autres fins.",
       content: `<h2>Aperçu</h2>
-<p>Le Consulat traite les demandes de visa pour les ressortissants étrangers souhaitant se rendre au Burundi. Nous proposons différents types de visas pour répondre aux différents objectifs de voyage.</p>
+<p>Le Consulat Honoraire traite les demandes de visa pour les ressortissants étrangers souhaitant se rendre au Burundi. Nous proposons différents types de visas pour répondre aux différents objectifs de voyage.</p>
 
 <h2>Types de visas</h2>
 <ul>
@@ -223,7 +223,7 @@ const consularServicesData = [
       title: "طلبات التأشيرة",
       description: "تأشيرات الدخول للرعايا الأجانب الراغبين في السفر إلى بوروندي للسياحة أو الأعمال أو أغراض أخرى.",
       content: `<h2>طلبات التأشيرة</h2>
-<p>تقوم القنصلية بمعالجة طلبات التأشيرة للرعايا الأجانب الراغبين في السفر إلى بوروندي.</p>
+<p>تقوم القنصلية الفخرية بمعالجة طلبات التأشيرة للرعايا الأجانب الراغبين في السفر إلى بوروندي.</p>
 
 <h3>أنواع التأشيرات</h3>
 <ul>
@@ -267,7 +267,7 @@ const consularServicesData = [
       slug: "birth-certificates",
       description: "Registration of births abroad and issuance of birth certificates for children born to Burundian parents.",
       content: `<h2>Birth Certificate Services</h2>
-<p>The Consulate assists Burundian nationals with birth registration and certificate issuance for children born abroad.</p>
+<p>The Honorary Consulate assists Burundian nationals with birth registration and certificate issuance for children born abroad.</p>
 
 <h3>Services Offered</h3>
 <ul>
@@ -297,8 +297,8 @@ const consularServicesData = [
 <h3>Process</h3>
 <ol>
   <li>Submit application with all required documents</li>
-  <li>Documents verified by consular staff</li>
-  <li>Registration recorded in consular register</li>
+  <li>Documents verified by honorary consular staff</li>
+  <li>Registration recorded in honorary consular register</li>
   <li>Birth certificate issued</li>
 </ol>
 
@@ -319,7 +319,7 @@ const consularServicesData = [
       title: "Actes de naissance",
       description: "Enregistrement des naissances à l'étranger et délivrance d'actes de naissance pour les enfants nés de parents burundais.",
       content: `<h2>Aperçu</h2>
-<p>Le Consulat fournit des services d'enregistrement des naissances pour les enfants nés de parents burundais au Soudan. Cela garantit que la citoyenneté burundaise de votre enfant est correctement documentée.</p>
+<p>Le Consulat Honoraire fournit des services d'enregistrement des naissances pour les enfants nés de parents burundais au Soudan. Cela garantit que la citoyenneté burundaise de votre enfant est correctement documentée.</p>
 
 <h2>Services offerts</h2>
 <ul>
@@ -347,7 +347,7 @@ const consularServicesData = [
       title: "شهادات الميلاد",
       description: "تسجيل المواليد في الخارج وإصدار شهادات الميلاد للأطفال المولودين لآباء بورونديين.",
       content: `<h2>خدمات شهادات الميلاد</h2>
-<p>تساعد القنصلية المواطنين البورونديين في تسجيل المواليد وإصدار الشهادات للأطفال المولودين في الخارج.</p>
+<p>تساعد القنصلية الفخرية المواطنين البورونديين في تسجيل المواليد وإصدار الشهادات للأطفال المولودين في الخارج.</p>
 
 <h3>الخدمات المقدمة</h3>
 <ul>
@@ -377,8 +377,8 @@ const consularServicesData = [
 <h3>العملية</h3>
 <ol>
   <li>تقديم الطلب مع جميع المستندات المطلوبة</li>
-  <li>التحقق من المستندات من قبل موظفي القنصلية</li>
-  <li>تسجيل الميلاد في السجل القنصلي</li>
+  <li>التحقق من المستندات من قبل موظفي القنصلية الفخرية</li>
+  <li>تسجيل الميلاد في السجل القنصلي الفخري</li>
   <li>إصدار شهادة الميلاد</li>
 </ol>
 
@@ -398,7 +398,7 @@ const consularServicesData = [
       slug: "document-legalization",
       description: "Authentication and legalization of documents for use in Burundi or Sudan.",
       content: `<h2>Document Legalization Services</h2>
-<p>The Consulate provides document authentication and legalization services for official documents to be used in Burundi or Sudan.</p>
+<p>The Honorary Consulate provides document authentication and legalization services for official documents to be used in Burundi or Sudan.</p>
 
 <h3>Services Offered</h3>
 <ul>
@@ -434,7 +434,7 @@ const consularServicesData = [
   <li>Submit original document with application form</li>
   <li>Pay applicable fees</li>
   <li>Document reviewed and verified</li>
-  <li>Consular stamp/seal applied</li>
+  <li>Honorary Consular stamp/seal applied</li>
   <li>Document returned to applicant</li>
 </ol>
 
@@ -456,7 +456,7 @@ const consularServicesData = [
       title: "Légalisation de documents",
       description: "Authentification et légalisation de documents pour utilisation au Burundi ou au Soudan.",
       content: `<h2>Aperçu</h2>
-<p>Le Consulat fournit des services d'authentification et de légalisation pour les documents devant être utilisés officiellement au Burundi ou au Soudan.</p>
+<p>Le Consulat Honoraire fournit des services d'authentification et de légalisation pour les documents devant être utilisés officiellement au Burundi ou au Soudan.</p>
 
 <h2>Services offerts</h2>
 <ul>
@@ -490,7 +490,7 @@ const consularServicesData = [
       title: "توثيق المستندات",
       description: "المصادقة وتوثيق المستندات للاستخدام في بوروندي أو السودان.",
       content: `<h2>خدمات توثيق المستندات</h2>
-<p>تقدم القنصلية خدمات المصادقة والتوثيق للمستندات الرسمية لاستخدامها في بوروندي أو السودان.</p>
+<p>تقدم القنصلية الفخرية خدمات المصادقة والتوثيق للمستندات الرسمية لاستخدامها في بوروندي أو السودان.</p>
 
 <h3>الخدمات المقدمة</h3>
 <ul>
@@ -526,7 +526,7 @@ const consularServicesData = [
   <li>تقديم المستند الأصلي مع نموذج الطلب</li>
   <li>دفع الرسوم المطبقة</li>
   <li>مراجعة والتحقق من المستند</li>
-  <li>وضع ختم/طابع القنصلية</li>
+  <li>وضع ختم/طابع القنصلية الفخرية</li>
   <li>إعادة المستند لمقدم الطلب</li>
 </ol>
 
@@ -547,7 +547,7 @@ const consularServicesData = [
       slug: "citizen-assistance",
       description: "Support for Burundian nationals in emergencies, including medical, legal, and repatriation assistance.",
       content: `<h2>Citizen Assistance Services</h2>
-<p>The Consulate provides support and assistance to Burundian nationals facing emergencies or difficulties in Sudan.</p>
+<p>The Honorary Consulate provides support and assistance to Burundian nationals facing emergencies or difficulties in Sudan.</p>
 
 <h3>Types of Assistance</h3>
 
@@ -584,7 +584,7 @@ const consularServicesData = [
 </ul>
 
 <h3>Emergency Contacts</h3>
-<p><strong>Consulate Emergency Hotline:</strong> +249-XXX-XXX-XXX</p>
+<p><strong>Honorary Consulate Emergency Hotline:</strong> +249-XXX-XXX-XXX</p>
 <p><strong>Available:</strong> 24/7 for emergencies</p>
 
 <h3>What We Cannot Do</h3>
@@ -596,7 +596,7 @@ const consularServicesData = [
 </ul>
 
 <h3>Registration</h3>
-<p>We encourage all Burundian nationals in Sudan to register with the Consulate to receive important updates and facilitate assistance in emergencies.</p>`,
+<p>We encourage all Burundian nationals in Sudan to register with the Honorary Consulate to receive important updates and facilitate assistance in emergencies.</p>`,
       icon: "hands-helping",
       order: 5,
       isActive: true,
@@ -606,7 +606,7 @@ const consularServicesData = [
       title: "Assistance aux citoyens",
       description: "Soutien aux ressortissants burundais en situation d'urgence, y compris l'assistance médicale, juridique et le rapatriement.",
       content: `<h2>Aperçu</h2>
-<p>Le Consulat fournit assistance et soutien aux citoyens burundais confrontés à des urgences ou des situations difficiles au Soudan.</p>
+<p>Le Consulat Honoraire fournit assistance et soutien aux citoyens burundais confrontés à des urgences ou des situations difficiles au Soudan.</p>
 
 <h2>Services offerts</h2>
 <ul>
@@ -639,7 +639,7 @@ const consularServicesData = [
       title: "مساعدة المواطنين",
       description: "الدعم للرعايا البورونديين في حالات الطوارئ، بما في ذلك المساعدة الطبية والقانونية والترحيل.",
       content: `<h2>خدمات مساعدة المواطنين</h2>
-<p>تقدم القنصلية الدعم والمساعدة للرعايا البورونديين الذين يواجهون حالات طوارئ أو صعوبات في السودان.</p>
+<p>تقدم القنصلية الفخرية الدعم والمساعدة للرعايا البورونديين الذين يواجهون حالات طوارئ أو صعوبات في السودان.</p>
 
 <h3>أنواع المساعدة</h3>
 
@@ -676,7 +676,7 @@ const consularServicesData = [
 </ul>
 
 <h3>جهات الاتصال في حالات الطوارئ</h3>
-<p><strong>خط الطوارئ القنصلي:</strong> +249-XXX-XXX-XXX</p>
+<p><strong>خط طوارئ القنصلية الفخرية:</strong> +249-XXX-XXX-XXX</p>
 <p><strong>متاح:</strong> على مدار الساعة طوال أيام الأسبوع للطوارئ</p>
 
 <h3>ما لا يمكننا فعله</h3>
@@ -688,7 +688,7 @@ const consularServicesData = [
 </ul>
 
 <h3>التسجيل</h3>
-<p>نشجع جميع الرعايا البورونديين في السودان على التسجيل لدى القنصلية لتلقي التحديثات المهمة وتسهيل المساعدة في حالات الطوارئ.</p>`
+<p>نشجع جميع الرعايا البورونديين في السودان على التسجيل لدى القنصلية الفخرية لتلقي التحديثات المهمة وتسهيل المساعدة في حالات الطوارئ.</p>`
     }
   },
   {
@@ -697,7 +697,7 @@ const consularServicesData = [
       slug: "power-of-attorney",
       description: "Notarization and certification of power of attorney documents and other legal instruments.",
       content: `<h2>Power of Attorney Services</h2>
-<p>The Consulate provides notarization and certification services for power of attorney documents and other legal instruments for Burundian citizens.</p>
+<p>The Honorary Consulate provides notarization and certification services for power of attorney documents and other legal instruments for Burundian citizens.</p>
 
 <h3>Services Offered</h3>
 <ul>
@@ -724,15 +724,15 @@ const consularServicesData = [
   <li>Draft power of attorney document (we can provide templates)</li>
   <li>Information of the attorney-in-fact (person receiving power)</li>
   <li>Specific details of powers being granted</li>
-  <li>Two witnesses (can be provided by consulate if needed)</li>
+  <li>Two witnesses (can be provided by honorary consulate if needed)</li>
 </ul>
 
 <h3>Process</h3>
 <ol>
   <li>Schedule an appointment</li>
   <li>Bring all required documents</li>
-  <li>Review and sign documents in presence of consular officer</li>
-  <li>Consular officer notarizes the document</li>
+  <li>Review and sign documents in presence of honorary consular officer</li>
+  <li>Honorary consular officer notarizes the document</li>
   <li>Receive certified copies</li>
 </ol>
 
@@ -762,7 +762,7 @@ const consularServicesData = [
       title: "Procuration",
       description: "Notarisation et certification des procurations et autres actes juridiques.",
       content: `<h2>Aperçu</h2>
-<p>Le Consulat fournit des services de notarisation et de certification pour les procurations et autres actes juridiques pour les citoyens burundais.</p>
+<p>Le Consulat Honoraire fournit des services de notarisation et de certification pour les procurations et autres actes juridiques pour les citoyens burundais.</p>
 
 <h2>Services offerts</h2>
 <ul>
@@ -791,7 +791,7 @@ const consularServicesData = [
 
 <h2>Notes importantes</h2>
 <ul>
-<li>Toutes les parties doivent se présenter en personne au Consulat</li>
+<li>Toutes les parties doivent se présenter en personne au Consulat Honoraire</li>
 <li>Les documents doivent être en français ou accompagnés d'une traduction certifiée</li>
 <li>Des témoins peuvent être requis pour certains documents</li>
 </ul>
@@ -803,7 +803,7 @@ const consularServicesData = [
       title: "التوكيل الرسمي",
       description: "التوثيق والتصديق على وثائق التوكيل والوثائق القانونية الأخرى.",
       content: `<h2>خدمات التوكيل الرسمي</h2>
-<p>تقدم القنصلية خدمات التوثيق والتصديق لوثائق التوكيل والوثائق القانونية الأخرى للمواطنين البورونديين.</p>
+<p>تقدم القنصلية الفخرية خدمات التوثيق والتصديق لوثائق التوكيل والوثائق القانونية الأخرى للمواطنين البورونديين.</p>
 
 <h3>الخدمات المقدمة</h3>
 <ul>
@@ -830,15 +830,15 @@ const consularServicesData = [
   <li>مسودة وثيقة التوكيل (يمكننا توفير النماذج)</li>
   <li>معلومات الوكيل (الشخص المستلم للصلاحية)</li>
   <li>التفاصيل المحددة للصلاحيات الممنوحة</li>
-  <li>شاهدان (يمكن توفيرهما من القنصلية عند الحاجة)</li>
+  <li>شاهدان (يمكن توفيرهما من القنصلية الفخرية عند الحاجة)</li>
 </ul>
 
 <h3>العملية</h3>
 <ol>
   <li>تحديد موعد</li>
   <li>إحضار جميع المستندات المطلوبة</li>
-  <li>مراجعة وتوقيع المستندات بحضور الموظف القنصلي</li>
-  <li>يوثق الموظف القنصلي المستند</li>
+  <li>مراجعة وتوقيع المستندات بحضور الموظف القنصلي الفخري</li>
+  <li>يوثق الموظف القنصلي الفخري المستند</li>
   <li>استلام النسخ المصدقة</li>
 </ol>
 
